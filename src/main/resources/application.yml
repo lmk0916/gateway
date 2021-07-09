@@ -44,19 +44,19 @@ spring:
     gateway:
       routes:
         - id: ask
-          uri: http://ask:8080
+          uri: http://user13-ask:8080
           predicates:
             - Path=/asks/** 
         - id: pay
-          uri: http://pay:8080
+          uri: http://user13-pay:8080
           predicates:
             - Path=/pays/** 
         - id: book
-          uri: http://book:8080
+          uri: http://user13-book:8080
           predicates:
             - Path=/books/** 
         - id: mypage
-          uri: http://mypage:8080
+          uri: http://user13-mypage:8080
           predicates:
             - Path= /mypages/**
       globalcors:
